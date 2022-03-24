@@ -12,6 +12,7 @@ import {styles} from './styles';
 export type ButtonProps = {
   children: ReactNode;
   onPress?: (event: GestureResponderEvent) => void;
+
   buttonStyle?: StyleProp<ViewStyle>;
   textStyle?: StyleProp<TextStyle>;
 };

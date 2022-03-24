@@ -8,7 +8,6 @@ import {
   View,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-
 import 'react-native-url-polyfill/auto';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {useGetPhotos} from '@/hooks/useGetPhotos';
@@ -56,7 +55,7 @@ export const ImageScreen = ({
                 </TouchableOpacity>
               </View>
             ) : (
-              <TouchableOpacity onPress={handleLogIn}>
+              <TouchableOpacity style={{padding: 10}} onPress={handleLogIn}>
                 <Text>Log In</Text>
               </TouchableOpacity>
             )}
@@ -67,7 +66,7 @@ export const ImageScreen = ({
             showsHorizontalScrollIndicator={false}
             showsVerticalScrollIndicator={false}
             keyExtractor={item => item.index}
-            onEndReachedThreshold={0}
+            onEndReachedThreshold={0.2}
             onEndReached={onRefresh}
             renderItem={item => {
               return <Photo photo={item.item} />;

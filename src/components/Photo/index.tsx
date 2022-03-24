@@ -5,7 +5,7 @@ import 'react-native-url-polyfill/auto';
 import {styles} from './styles';
 
 export const Photo = ({photo}: any) => {
-  const {user, urls} = photo;
+  const {urls} = photo;
 
   return (
     <View>

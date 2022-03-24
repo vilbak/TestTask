@@ -11,6 +11,7 @@ export const HomeStackNavigator = () => {
     <Stack.Navigator
       screenOptions={{
         headerTransparent: true,
+        headerTitleAlign: 'center',
       }}>
       <Stack.Screen
         options={{title: 'Image Gallery'}}
